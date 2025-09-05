@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "todo-clean-architecture"
 include(":app")
+include(":domain")
+include(":data")
