@@ -24,6 +24,10 @@ android {
 dependencies {
     implementation(project(":domain"))
     
+    // Coroutines pour les opérations asynchrones
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    
     // Room dependencies
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
@@ -32,4 +36,5 @@ dependencies {
     // Testing
     testImplementation(libs.androidx.room.testing)
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
 }

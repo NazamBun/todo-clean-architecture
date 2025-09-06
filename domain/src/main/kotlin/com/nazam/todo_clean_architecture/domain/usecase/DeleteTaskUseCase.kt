@@ -1,0 +1,11 @@
+package com.nazam.todo_clean_architecture.domain.usecase
+
+import com.nazam.todo_clean_architecture.domain.repository.TaskRepository
+
+class DeleteTaskUseCase(
+    private val taskRepository: TaskRepository
+) {
+    suspend operator fun invoke(id: Int) {
+        taskRepository.delete(id)
+    }
+}

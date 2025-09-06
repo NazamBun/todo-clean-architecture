@@ -8,8 +8,10 @@ java {
 
 dependencies {
     // Kotlin stdlib vient avec le plugin
-    // (Optionnel) Coroutines si tu en utilises dans tes UseCases
-    // implementation(libs.kotlinx.coroutines.core)
+    
+    // Coroutines pour les Use Cases
+    implementation(libs.kotlinx.coroutines.core)
 
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
 }

@@ -15,7 +15,7 @@ interface TaskRepository {
     suspend fun getById(id: Int): Task?
 
     /** Ajoute une nouvelle tâche et retourne son id. */
-    suspend fun add(task: Task): Int
+    suspend fun add(task: Task): Long
 
     /** Met à jour une tâche existante. */
     suspend fun update(task: Task)
